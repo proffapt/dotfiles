@@ -141,6 +141,9 @@ call plug#begin('~/.vim/plugged')
   " Multi-cursor
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
+  " Code-break game
+  Plug 'johngrib/vim-game-code-break'
+
 call plug#end()
 
 "   Calling out the plugins
