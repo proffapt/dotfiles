@@ -84,6 +84,9 @@ nnoremap rr :FloatermNew --title=code-runner --height=0.6 --width=0.7 --autoclos
 nnoremap <expr> ff expand('%:t') ==? 'fish' ? ":FloatermToggle <cr>" : execute(':ls! hR') ==? "" ? ":FloatermNew --title=code-runner --height=0.6 --width=0.7 <cr> <C-\><C-n>:FloatermToggle <cr>:w <cr>:FloatermSend --title=code-runner run % <cr>:FloatermToggle <cr>" : ":w <cr>:FloatermSend --title=code-runner run % <cr>:FloatermToggle <cr>"
 tnoremap <expr> ff "<C-\><C-n>:FloatermToggle <cr>"
 
+"   opening terminal while working on file
+nnoremap <expr> tt execute(':ls! hR') ==? "" ? ":FloatermNew --title=terminal --height=0.6 --width=0.7 <cr>" : ":FloatermToggle <cr>"
+
 "   Usual NVIM navigation keybinds:
 
 nnoremap <leader>q :q <cr>
@@ -140,9 +143,6 @@ call plug#begin('~/.vim/plugged')
 
   " Multi-cursor
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-
-  " Code-break game
-  Plug 'johngrib/vim-game-code-break'
 
 call plug#end()
 
