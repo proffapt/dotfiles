@@ -1,3 +1,4 @@
+" testing
 "This is my configuration file for the nvim installation on my device...
 
 " BASIC CONFIGURATION ---------------------------------------------------------------- {{{
