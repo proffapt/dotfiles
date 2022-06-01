@@ -144,6 +144,9 @@ call plug#begin('~/.vim/plugged')
   " Multi-cursor
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
+  " Discord presence
+  Plug 'vimsence/vimsence'
+
 call plug#end()
 
 "   Calling out the plugins
