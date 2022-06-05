@@ -123,8 +123,11 @@ tnoremap jj <C-\><C-n>
 " Install vim-plugin for this to work
 call plug#begin('~/.vim/plugged')
 
-  " Syntax checking and symantic errors
+  " Autocompletion
   Plug 'neoclide/coc.nvim'
+
+  " Symnatic checking for syntax errors
+  Plug 'dense-analysis/ale'
 
   " Collection of color themes
   Plug 'EdenEast/nightfox.nvim'
