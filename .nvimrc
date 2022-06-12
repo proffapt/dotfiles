@@ -150,6 +150,8 @@ call plug#begin('~/.vim/plugged')
   " Discord presence
   Plug 'vimsence/vimsence'
 
+  " Interactive debugger
+  Plug 'puremourning/vimspector'
 call plug#end()
 
 "   Calling out the plugins
