@@ -129,26 +129,26 @@ call plug#begin('~/.vim/plugged')
   " Symnatic checking for syntax errors
   Plug 'dense-analysis/ale'
 
+  " Commenting utility
+  Plug 'tpope/vim-commentary'
+
   " Collection of color themes
   Plug 'EdenEast/nightfox.nvim'
 
   " Status line
   Plug 'vim-airline/vim-airline'
 
-  " Commenting utility
-  Plug 'tpope/vim-commentary'
+  " Rainbow brackets
+  Plug 'frazrepo/vim-rainbow'
 
   " Floating Terminal
   Plug 'voldikss/vim-floaterm'
 
-  " Rainbow brackets
-  Plug 'frazrepo/vim-rainbow'
-
   " Multi-cursor
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
-  " Discord presence
-  Plug 'vimsence/vimsence'
+  " " Discord presence
+  " Plug 'vimsence/vimsence'
 
 call plug#end()
 
