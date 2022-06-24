@@ -1,4 +1,6 @@
 "This is my configuration file for the nvim installation on my device...
+" version: "2"
+" authtoken: 28Gv4UPiTJTv8vO4jfNavYe7cNY_73dUkbxpWPMSwn5CxpFdr
 
 " BASIC CONFIGURATION ---------------------------------------------------------------- {{{
 
