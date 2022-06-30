@@ -71,8 +71,10 @@ let mapleader = " "
 
 "yank/copy to system clipboard
 vnoremap <leader>y "*y
+nnoremap <leader>y "*y
 "put/paste from system clipboard
 vnoremap <leader>p "*p
+nnoremap <leader>p "*p
 
 "   Sourcing my vimrc
 nnoremap <leader>r :source ~/.config/nvim/init.vim<cr>
