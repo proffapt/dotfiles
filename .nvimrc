@@ -127,25 +127,18 @@ call plug#begin('~/.vim/plugged')
 
   " Autocompletion
   Plug 'neoclide/coc.nvim'
-
   " Symnatic checking for syntax errors
   Plug 'dense-analysis/ale'
-
   " Commenting utility
   Plug 'tpope/vim-commentary'
-
   " Collection of color themes
   Plug 'EdenEast/nightfox.nvim'
-
   " Status line
   Plug 'vim-airline/vim-airline'
-
   " Rainbow brackets
   Plug 'frazrepo/vim-rainbow'
-
   " Floating Terminal
   Plug 'voldikss/vim-floaterm'
-
   " Multi-cursor
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
@@ -162,6 +155,13 @@ colorscheme codedark
 
 " RainbowToggle
 let g:rainbow_active = 1
+
+" Configuring coc.vim
+let g:coc_global_extensions = [
+	coc-snippets,
+	coc-pairs, 
+	coc-prettier,
+	]
 
 
 " }}}
