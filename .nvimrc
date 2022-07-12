@@ -165,7 +165,7 @@ let g:coc_global_extensions = [
 	\ 'coc-sh' ,
 	\ 'coc-java' ,
 	\ 'coc-html' ,
-	\ 'coc-tsscript' ,
+	\ 'coc-tsserver' ,
 	\ ]
 
 
