@@ -158,10 +158,10 @@ let g:rainbow_active = 1
 
 " Configuring coc.vim
 let g:coc_global_extensions = [
-	'coc-snippets' ,
-	'coc-pairs' , 
-	'coc-prettier' ,
-	]
+	\ 'coc-snippets' ,
+	\ 'coc-pairs' , 
+	\ 'coc-prettier' ,
+	\ ]
 
 
 " }}}
