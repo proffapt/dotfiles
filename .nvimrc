@@ -142,7 +142,7 @@ call plug#begin('~/.vim/plugged')
   " Multi-cursor
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
   " live-server
-  Plug 'turbio/bracey.vim'
+  Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
 
   " " Discord presence
   " Plug 'vimsence/vimsence'
