@@ -141,6 +141,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'voldikss/vim-floaterm'
   " Multi-cursor
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+  " live-server
+  Plug 'manzeloth/live-server'
 
   " " Discord presence
   " Plug 'vimsence/vimsence'
