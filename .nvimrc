@@ -146,6 +146,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
   " live-server
   Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
+  " Colorizer
+  Plug 'norcalli/nvim-colorizer.lua'
 
   " " Discord presence
   " Plug 'vimsence/vimsence'
@@ -172,6 +174,9 @@ let g:coc_global_extensions = [
 	\ 'coc-html' ,
 	\ 'coc-tsserver' ,
 	\ ]
+
+" Setting up colorizer
+lua require'colorizer'.setup()
 
 
 " }}}
