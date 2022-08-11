@@ -129,7 +129,8 @@ tnoremap jj <C-\><C-n>
 call plug#begin('~/.vim/plugged')
 
   " Autocompletion
-  Plug 'neoclide/coc.nvim'
+  Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
+
   " Symnatic checking for syntax errors
   Plug 'dense-analysis/ale'
   " Commenting utility
