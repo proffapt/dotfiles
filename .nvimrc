@@ -77,9 +77,12 @@ vnoremap <leader>p "*p
 nnoremap <leader>p "*p
 
 "   Sourcing my vimrc
-nnoremap <leader>r :source ~/.config/nvim/init.vim<cr>
+nnoremap <leader>s :source ~/.config/nvim/init.vim<cr>
 "   Editing my vimrc
 nnoremap <leader>e :vsplit <cr>:e ~/.nvimrc <cr>
+
+"	Reloading bracy
+nnoremap <leader>r :BraceyReload
 
 "   Keybinding for my code-runner
 nnoremap rr :w<cr> :FloatermNew --title=code-runner --height=0.6 --width=0.7 --autoclose=0 run % <cr>
