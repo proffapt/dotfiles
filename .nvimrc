@@ -1,3 +1,6 @@
+" setting up termguicolors before loading plugins
+vim.opt.termguicolors = true
+
 "This is my configuration file for the nvim installation on my device...
 
 " BASIC CONFIGURATION ---------------------------------------------------------------- {{{
@@ -125,8 +128,6 @@ tnoremap jj <C-\><C-n>
 " PLUGINS ---------------------------------------------------------------- {{{
 
 
-" setting up termguicolors before loading plugins
-vim.opt.termguicolors = true
 
 " Install vim-plugin for this to work
 call plug#begin('~/.vim/plugged')
