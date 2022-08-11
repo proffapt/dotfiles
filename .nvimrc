@@ -77,7 +77,7 @@ vnoremap <leader>p "*p
 nnoremap <leader>p "*p
 
 "   Sourcing my vimrc
-nnoremap <leader>s :source ~/.config/nvim/init.vim<cr>
+nnoremap <leader>x :source ~/.config/nvim/init.vim<cr>
 "   Editing my vimrc
 nnoremap <leader>e :vsplit <cr>:e ~/.nvimrc <cr>
 
