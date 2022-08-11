@@ -1,5 +1,5 @@
 " setting up termguicolors before loading plugins
-vim.opt.termguicolors = true
+vim.o.termguicolors = true
 
 "This is my configuration file for the nvim installation on my device...
 
