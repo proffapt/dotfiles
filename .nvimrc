@@ -133,7 +133,6 @@ call plug#begin('~/.vim/plugged')
 
   " Autocompletion
   Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
-
   " Symnatic checking for syntax errors
   Plug 'dense-analysis/ale'
   " Commenting utility
@@ -149,8 +148,7 @@ call plug#begin('~/.vim/plugged')
   " Multi-cursor
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
   " live-server
-  " Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
-
+  Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
   " " Discord presence
   " Plug 'vimsence/vimsence'
 
