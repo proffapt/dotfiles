@@ -131,6 +131,8 @@ let g:python3_host_prog="/opt/homebrew/opt/python@3.10/bin/python3.10"
 " Install vim-plugin for this to work
 call plug#begin('~/.vim/plugged')
 
+  " " Discord presence
+  " Plug 'vimsence/vimsence'
   " Autocompletion
   Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
   " Symnatic checking for syntax errors
@@ -149,10 +151,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
   " live-server
   Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
-  " Github-Copilot
-  Plug 'github/copilot.vim'
-  " " Discord presence
-  " Plug 'vimsence/vimsence'
 
 call plug#end()
 
