@@ -149,6 +149,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
   " live-server
   Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
+  " Github-Copilot
+  Plug 'github/copilot.vim'
   " " Discord presence
   " Plug 'vimsence/vimsence'
 
