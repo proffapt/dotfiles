@@ -7,7 +7,7 @@ function gt --description "Moving to directories seamlesly"
 end
 
 function n --description "Text editor, with my touch"
-	if test $argv *.sh 
+	if test $argv = *.sh 
 		touch $argv && chmod +x $argv && nvim $argv
 	else
 		nvim $argv
