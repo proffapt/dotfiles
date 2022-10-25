@@ -6,7 +6,13 @@
 		<key>phrase</key>
 		<string>On my way!</string>
 		<key>shortcut</key>
-		<string>omw</string>
+		<string>:omw</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>(￢‿￢ )<string>
+		<key>shortcut</key>
+		<string>:doubt</string>
 	</dict>
 </array>
 </plist>
