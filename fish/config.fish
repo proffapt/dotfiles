@@ -8,7 +8,7 @@ if status is-interactive
 	source ~/.config/fish/functions/myfuncs.fish 
 
 	### Sourcing my 'fishy' aliases
-	source ~/Desktop/.config/fish/functions/aliases.fish
+	source ~/.config/fish/functions/aliases.fish
 
 	### Configuring my environment varaibles
 	## homebrew
