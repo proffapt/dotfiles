@@ -1,0 +1,7 @@
+[user]
+	email = proffapt@pm.me
+	name = proffapt
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
