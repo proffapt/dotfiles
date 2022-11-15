@@ -84,6 +84,9 @@ nnoremap <leader>e :vsplit <cr>:e ~/.nvimrc <cr>
 "	Reloading bracy
 nnoremap <leader>r :w <cr>:BraceyReload<cr>
 
+"	Prettier keybinding
+nnoremap <leader>f :Prettier <cr>
+
 "   Keybinding for my code-runner
 nnoremap rr :w<cr> :FloatermNew --title=code-runner --height=0.6 --width=0.7 --autoclose=0 run % <cr>
 nnoremap <expr> ff expand('%:t') ==? 'fish' ? ":FloatermToggle <cr>" : execute(':ls! hR') ==? "" ? ":FloatermNew --title=code-runner --height=0.6 --width=0.7 <cr> <C-\><C-n>:FloatermToggle <cr>:w <cr>:FloatermSend --title=code-runner run % <cr>:FloatermToggle <cr>" : ":w <cr>:FloatermSend --title=code-runner run % <cr>:FloatermToggle <cr>"
