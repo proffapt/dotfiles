@@ -174,7 +174,6 @@ let g:rainbow_active = 1
 let g:coc_global_extensions = [
 	\ 'coc-snippets' ,
 	\ 'coc-pairs' , 
-	\ 'coc-prettier' ,
 	\ 'coc-clangd' ,
 	\ 'coc-sh' ,
 	\ 'coc-java' ,
