@@ -85,7 +85,7 @@ nnoremap <leader>e :vsplit <cr>:e ~/.nvimrc <cr>
 nnoremap <leader>r :w <cr>:BraceyReload<cr>
 
 "	Prettier keybinding
-nnoremap <leader>f :Prettier <cr>
+nnoremap <leader>m :Prettier <cr>
 
 "   Keybinding for my code-runner
 nnoremap rr :w<cr> :FloatermNew --title=code-runner --height=0.6 --width=0.7 --autoclose=0 run % <cr>
