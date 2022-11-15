@@ -153,6 +153,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
   " golang intelisense using gopls
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  " Prettier linter
+  "" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 call plug#end()
 
