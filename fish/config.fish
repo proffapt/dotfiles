@@ -24,6 +24,7 @@ if status is-interactive
 	## Custom env variables
 	set pds "/Users/proffapt/Desktop/college/PDS/Section_01/Assignments"
     set PATH /Users/proffapt/Desktop/dotfiles/public/scripts $PATH ##scripts
+    set PATH /Users/proffapt/Desktop/dotfiles/private/scripts $PATH ##scripts
 
 	### Configuring autojump
 	[ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish
