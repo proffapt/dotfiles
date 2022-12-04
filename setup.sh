@@ -49,6 +49,8 @@ rm -f ~/.config/fish/functions/myfuncs.fish
 ln -s ~/Desktop/dotfiles/public/fish/myfuncs.fish ~/.config/fish/functions/myfuncs.fish
 rm -f ~/.config/fish/functions/aliases.fish
 ln -s ~/Desktop/dotfiles/private/fish/aliases.fish ~/.config/fish/functions/aliases.fish
+## sourcing fish files
+source ~/.config/fish/config.fish ~/.config/fish/fish_variables ~/.config/fish/functions/fish_prompt.fish ~/.config/fish/functions/myfuncs.fish ~/.config/fish/functions/aliases.fish
 
 # setting up nvim
 rm -f ~/.nvimrc
@@ -65,12 +67,27 @@ ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db ~/Desktop/scripts/kwoc-db
 ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db-newprojects ~/Desktop/scripts/kwoc-db-newprojects
 ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db-stats ~/Desktop/scripts/kwoc-db-stats
 
-## setup gsync 
+## setting up gsync 
 # initialising gsync
 gh auth login
 gh auth refresh -h github.com -s delete_repo
 # configure gsync
 mkdir ~/Desktop/utilities
 git clone https://github.com/proffapt/gsync ~/Desktop/utilities/gsync
-cd ~/Desktop/utilities/gsync
+ln -s ~/Desktop/dotfiles/public/gsync/.defaults ~/Desktop/utilities/gsync/.defaults
+ln -s ~/Desktop/dotfiles/public/gsync/services ~/Desktop/utilities/gsync/lib/services
+ln -s ~/Desktop/dotfiles/public/gsync/startup.sh ~/Desktop/utilities/gsync/lib/startup.sh
+# getting repos to use with gsync
+git clone https://github.com/proffapt/bodhitree ~/Desktop/bodhitree
+git clone https://github.com/proffapt/obsidian ~/Desktop/obsidian/
+# configuring gsync on the directories
+echo "The existense of this file signifies that gsync was ran atleast once on this folder." > .gsync_init
+cp .gsync_init ~/Desktop/bodhitree/ 
+cp .gsync_init ~/Desktop/obsidian/
+cp .gsync_init ~/Desktop/dotfiles/public/
+cp .gsync_init ~/Desktop/dotfiles/public/
+rm .gsync_init
 
+## getting things from github
+mkdir -p ~/Desktop/college/
+git clone https://github.com/proffapt/iitkgp-pds-lab ~/Desktop/college/pds
