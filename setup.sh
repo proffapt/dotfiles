@@ -85,7 +85,7 @@ echo "The existense of this file signifies that gsync was ran atleast once on th
 cp .gsync_init ~/Desktop/bodhitree/ 
 cp .gsync_init ~/Desktop/obsidian/
 cp .gsync_init ~/Desktop/dotfiles/public/
-cp .gsync_init ~/Desktop/dotfiles/public/
+cp .gsync_init ~/Desktop/dotfiles/private/
 rm .gsync_init
 
 ## getting things from github
