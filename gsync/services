@@ -1,0 +1,10 @@
+#!/bin/bash
+
+## Separating every entry from this script
+set -m 
+
+## Entries for github folder to be synced continuously via the syncscript by gsync
+nohup /Users/proffapt/Desktop/utilities/gsync/lib/syncscript -d /Users/proffapt/Desktop/dotfiles/private > /Users/proffapt/Desktop/utilities/gsync/lib/logs/private.log &
+nohup /Users/proffapt/Desktop/utilities/gsync/lib/syncscript -d /Users/proffapt/Desktop/dotfiles/public > /Users/proffapt/Desktop/utilities/gsync/lib/logs/public.log &
+nohup /Users/proffapt/Desktop/utilities/gsync/lib/syncscript -d /Users/proffapt/Desktop/bodhitree > /Users/proffapt/Desktop/utilities/gsync/lib/logs/bodhitree.log 2>/dev/null &
+nohup /Users/proffapt/Desktop/utilities/gsync/lib/syncscript -d /Users/proffapt/Desktop/obsidian/gideon > /Users/proffapt/Desktop/utilities/gsync/lib/logs/gideon.log 2>/dev/null &

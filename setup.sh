@@ -7,7 +7,7 @@
 brew install --cask veracrypt accord keepassxc bitwarden firefox telegram obsidian warp keycastr element finicky hiddenbar docker aldente obs vlc eiskaltdcpp android-file-transfer intellij-idea-ce mpv slack
 
 ## Installing formulae from brew
-brew install git docker wget curl nvim
+brew install git docker wget curl nvim bash gh fswatch
 
 echo "Hotspot Shield: https://apps.apple.com/us/app/hotspot-shield-vpn-best-vpn/id771076721?mt=12"
 echo "Amphetamine: https://apps.apple.com/us/app/amphetamine/id937984704?mt=12"
@@ -64,3 +64,13 @@ ln -s ~/Desktop/dotfiles/public/scripts/cfmt ~/Desktop/scripts/cfmt
 ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db ~/Desktop/scripts/kwoc-db
 ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db-newprojects ~/Desktop/scripts/kwoc-db-newprojects
 ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db-stats ~/Desktop/scripts/kwoc-db-stats
+
+## setup gsync 
+# initialising gsync
+gh auth login
+gh auth refresh -h github.com -s delete_repo
+# configure gsync
+mkdir ~/Desktop/utilities
+git clone https://github.com/proffapt/gsync ~/Desktop/utilities/gsync
+cd ~/Desktop/utilities/gsync
+
