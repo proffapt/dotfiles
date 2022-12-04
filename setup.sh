@@ -3,14 +3,18 @@
 ## Installing brew.sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+echo "Login into apple account now, by then imma install some stuff"
 ## Installing casks from brew 
 brew install --cask veracrypt accord keepassxc bitwarden firefox telegram obsidian warp keycastr element finicky hiddenbar docker aldente obs vlc eiskaltdcpp android-file-transfer intellij-idea-ce mpv slack
 
 ## Installing formulae from brew
 brew install git docker wget curl nvim bash gh fswatch mas
 
-echo "Hotspot Shield: https://apps.apple.com/us/app/hotspot-shield-vpn-best-vpn/id771076721?mt=12"
-echo "Amphetamine: https://apps.apple.com/us/app/amphetamine/id937984704?mt=12"
+## installing from apple store
+mas install 771076721
+mas install 937984704
+
+## cracked software
 echo "Cracked Sofware:"
 echo 
 "
