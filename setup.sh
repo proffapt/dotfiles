@@ -7,7 +7,7 @@
 brew install --cask veracrypt accord keepassxc bitwarden firefox telegram obsidian warp keycastr element finicky hiddenbar docker aldente obs vlc eiskaltdcpp android-file-transfer intellij-idea-ce mpv slack
 
 ## Installing formulae from brew
-brew install git docker wget curl nvim bash gh fswatch
+brew install git docker wget curl nvim bash gh fswatch mas
 
 echo "Hotspot Shield: https://apps.apple.com/us/app/hotspot-shield-vpn-best-vpn/id771076721?mt=12"
 echo "Amphetamine: https://apps.apple.com/us/app/amphetamine/id937984704?mt=12"
