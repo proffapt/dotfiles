@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## backup drive location: /Users/proffapt/Library/Mobile Documents/com~apple~CloudDocs
+
 ## setting fingerprints for sudo
 sudo "auth sufficient pam_tid.so" >> /etc/pam.d/sudo
 
