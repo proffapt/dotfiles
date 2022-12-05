@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## setting fingerprints for sudo
+sudo "auth sufficient pam_tid.so" >> /etc/pam.d/sudo
+
 ## Installing brew.sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -8,7 +11,23 @@ echo "Login into apple account now, by then imma install some stuff"
 brew install --cask veracrypt accord keepassxc bitwarden firefox telegram obsidian warp keycastr element finicky hiddenbar docker aldente obs vlc eiskaltdcpp android-file-transfer intellij-idea-ce mpv slack
 
 ## Installing formulae from brew
-brew install git docker wget curl nvim bash gh fswatch mas
+brew install git docker wget curl nvim bash gh fswatch mas fish
+
+## switching to fish
+chsh -s $(which fish)
+
+## some unga boonga
+defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false
+defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write org.x.X11 wm_ffm -bool true
+defaults write com.apple.Terminal FocusFollowsMouse -string YES
+defaults write ApplePressAndHoldEnabled -bool false
+defaults write com.apple.finder CreateDesktop false
+defaults write com.apple.dock autohide-delay -float 0
+defaults write PMPrintingExpandedStateForPrint -bool TRUE
+defaults write com.apple.screecapture type JPG
 
 ## installing from apple store
 mas install 771076721
@@ -41,6 +60,10 @@ git config credential.helper store
 # setting up finicky
 rm -f ~/.finicky.js
 ln -s ~/Desktop/dotfiles/public/finicky/finicky.js ~/.finicky.js
+
+# setting up hosts file
+sudo rm -f /etc/hosts
+sudo ln -s ~/Desktop/dotfiles/private/hosts/hosts /etc/hosts
 
 # setting up fish shell
 rm -f ~/.config/fish/config.fish
@@ -86,10 +109,10 @@ git clone https://github.com/proffapt/bodhitree ~/Desktop/bodhitree
 git clone https://github.com/proffapt/obsidian ~/Desktop/obsidian/
 # configuring gsync on the directories
 echo "The existense of this file signifies that gsync was ran atleast once on this folder." > .gsync_init
-cp .gsync_init ~/Desktop/bodhitree/ 
-cp .gsync_init ~/Desktop/obsidian/
-cp .gsync_init ~/Desktop/dotfiles/public/
-cp .gsync_init ~/Desktop/dotfiles/private/
+rsync .gsync_init ~/Desktop/bodhitree/ 
+rsync .gsync_init ~/Desktop/obsidian/
+rsync .gsync_init ~/Desktop/dotfiles/public/
+rsync .gsync_init ~/Desktop/dotfiles/private/
 rm .gsync_init
 
 ## getting things from github
