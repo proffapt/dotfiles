@@ -3,6 +3,7 @@
 ## backup drive location: /Users/proffapt/Library/Mobile Documents/com~apple~CloudDocs
 ## get text replacements
 ## clone my tools as well
+## install python
 
 ## setting fingerprints for sudo
 sudo "auth sufficient pam_tid.so" >> /etc/pam.d/sudo
@@ -15,7 +16,8 @@ echo "Login into apple account now, by then imma install some stuff"
 brew install --cask veracrypt accord keepassxc bitwarden firefox telegram obsidian warp keycastr element finicky hiddenbar docker aldente obs vlc eiskaltdcpp android-file-transfer intellij-idea-ce mpv slack
 
 ## Installing formulae from brew
-brew install git docker wget curl neovim bash gh fswatch mas fish bat
+brew install git docker wget curl neovim bash gh fswatch mas fish bat npm
+sudo npm install yarn -g
 
 ## switching to fish
 chsh -s $(which fish)
@@ -59,9 +61,7 @@ git clone https://github.com/proffapt/dotfiles-private ~/Desktop/dotfiles/privat
 # setting up git
 rm -f ~/.gitconfig
 ln -s ~/Desktop/dotfiles/public/git/.gitconfig ~/.gitconfig
-cd ~/Desktop/dotfiles/private
-git config credential.helper store
-cd
+git config --global credential.helper store
 
 # setting up finicky
 rm -f ~/.finicky.js
@@ -85,9 +85,14 @@ ln -s ~/Desktop/dotfiles/private/shell_aliases/aliases.fish ~/.config/fish/funct
 ## sourcing fish files
 source ~/.config/fish/config.fish ~/.config/fish/fish_variables ~/.config/fish/functions/fish_prompt.fish ~/.config/fish/functions/myfuncs.fish ~/.config/fish/functions/aliases.fish
 
+## install python3 and set it up for python support in nvim - pip3 install pynvim
+## https://carakan.net/blog/2020/04/configuring-python3-on-neovim/
+
 # setting up nvim
 rm -f ~/.nvimrc
 ln -s ~/Desktop/dotfiles/public/nvim/.nvimrc ~/.nvimrc
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir -p ~/.config/nvim && echo "source ~/.nvimrc" > ~/.config/nvim/init.vim
 echo "Now you will be shown a nvim buffer, Install the Plugins using :PlugInstall"
 sleep 5
 nvim /tmp/test.txt && rm /tmp/test.txt
