@@ -22,8 +22,8 @@ if status is-interactive
 	set JAVA_HOME "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 
 	## Custom env variables
-	set pds "/Users/proffapt/Desktop/college/PDS/Section_01/Assignments"
-    set PATH /Users/proffapt/Desktop/scripts $PATH ##scripts
+	set pds "~/Desktop/college/PDS/Section_01/Assignments"
+    set PATH ~/Desktop/scripts $PATH ##scripts
 
 	### Configuring autojump
 	[ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish
