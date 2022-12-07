@@ -7,3 +7,5 @@
     rebase = false
 [commit]
     verbose = true
+[credential]
+	helper = store
