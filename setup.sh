@@ -88,7 +88,7 @@ rm -f ~/.nvimrc
 ln -s ~/Desktop/dotfiles/public/nvim/.nvimrc ~/.nvimrc
 echo "Now you will be shown a nvim buffer, Install the Plugins using :PlugInstall"
 sleep 5
-nvim /tmp/test.txt
+nvim /tmp/test.txt && rm /tmp/test.txt
 ln -s ~/Desktop/dotfiles/public/nvim/codedark.vim ~/.vim/plugged/nightfox.nvim/colors/codedark.vim
 
 # setting up scripts
