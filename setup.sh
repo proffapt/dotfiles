@@ -2,6 +2,7 @@
 
 ## backup drive location: /Users/proffapt/Library/Mobile Documents/com~apple~CloudDocs
 ## get text replacements
+## clone my tools as well
 
 ## setting fingerprints for sudo
 sudo "auth sufficient pam_tid.so" >> /etc/pam.d/sudo
@@ -87,6 +88,7 @@ rm -f ~/.nvimrc
 ln -s ~/Desktop/dotfiles/public/nvim/.nvimrc ~/.nvimrc
 echo "Now you will be shown a nvim buffer, Install the Plugins using :PlugInstall"
 sleep 5
+nvim /tmp/test.txt
 ln -s ~/Desktop/dotfiles/public/nvim/codedark.vim ~/.vim/plugged/nightfox.nvim/colors/codedark.vim
 
 # setting up scripts
