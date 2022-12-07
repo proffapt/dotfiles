@@ -129,7 +129,7 @@ tnoremap jj <C-\><C-n>
 
 
 " Selecting the version of python
-let g:python3_host_prog="/opt/homebrew/opt/python@3.10/bin/python3.10"
+let g:python3_host_prog="/usr/bin/python3"
 
 " Install vim-plugin for this to work
 call plug#begin('~/.vim/plugged')
