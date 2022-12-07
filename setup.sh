@@ -59,7 +59,9 @@ git clone https://github.com/proffapt/dotfiles-private ~/Desktop/dotfiles/privat
 # setting up git
 rm -f ~/.gitconfig
 ln -s ~/Desktop/dotfiles/public/git/.gitconfig ~/.gitconfig
+cd ~/Desktop/dotfiles/private
 git config credential.helper store
+cd
 
 # setting up finicky
 rm -f ~/.finicky.js
