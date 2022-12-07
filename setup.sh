@@ -14,7 +14,7 @@ echo "Login into apple account now, by then imma install some stuff"
 brew install --cask veracrypt accord keepassxc bitwarden firefox telegram obsidian warp keycastr element finicky hiddenbar docker aldente obs vlc eiskaltdcpp android-file-transfer intellij-idea-ce mpv slack
 
 ## Installing formulae from brew
-brew install git docker wget curl nvim bash gh fswatch mas fish
+brew install git docker wget curl nvim bash gh fswatch mas fish bat
 
 ## switching to fish
 chsh -s $(which fish)
