@@ -79,7 +79,7 @@ ln -s ~/Desktop/dotfiles/public/fish/fish_prompt.fish ~/.config/fish/functions/f
 rm -f ~/.config/fish/functions/myfuncs.fish
 ln -s ~/Desktop/dotfiles/public/fish/myfuncs.fish ~/.config/fish/functions/myfuncs.fish
 rm -f ~/.config/fish/functions/aliases.fish
-ln -s ~/Desktop/dotfiles/private/fish/aliases.fish ~/.config/fish/functions/aliases.fish
+ln -s ~/Desktop/dotfiles/private/shell_aliases/aliases.fish ~/.config/fish/functions/aliases.fish
 ## sourcing fish files
 source ~/.config/fish/config.fish ~/.config/fish/fish_variables ~/.config/fish/functions/fish_prompt.fish ~/.config/fish/functions/myfuncs.fish ~/.config/fish/functions/aliases.fish
 
