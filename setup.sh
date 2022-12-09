@@ -33,7 +33,8 @@ fish
 mas install 1352778147
 echo "Bitwarden Installed, sign in into github in safari for further needs"
 sleep 5
-mas install 771076721
+mas install 771076721 #hotspot shield
+mas install 937984704 #amphetamine
 
 ## switching to fish
 echo "Add the following into the file being opened"
