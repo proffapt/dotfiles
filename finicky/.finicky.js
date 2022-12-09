@@ -1,7 +1,7 @@
 // ~/.finicky.js
 
 module.exports = {
-  defaultBrowser: "Firefox",
+  defaultBrowser: "LibreWolf",
   rewrite: [
     {
       // Redirect all urls to use https
