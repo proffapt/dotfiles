@@ -164,4 +164,4 @@ rsync -rP ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/* ~/Document
 rsync -rP ~/Library/Mobile\ Documents/com~apple~CloudDocs/Movies/* ~/Movies/
 
 mkdir ~/sandbox
-mkdir ~/Destkop/github
+mkdir -p ~/Desktop/github/_forked ~/Desktop/github/_cloned
