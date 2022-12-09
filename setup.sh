@@ -21,7 +21,7 @@ brew upgrade
 
 echo "Login into apple account and configure settings now, by then imma install some stuff"
 ## Installing casks from brew 
-brew install --cask veracrypt accord keepassxc firefox telegram obsidian warp keycastr element finicky hiddenbar docker aldente vlc eiskaltdcpp android-file-transfer mpv slack
+brew install --cask veracrypt accord keepassxc firefox telegram obsidian warp keycastr element finicky bartender docker aldente vlc eiskaltdcpp android-file-transfer mpv slack
 
 ## Installing formulae from brew
 brew install git docker wget curl neovim bash gh fswatch mas fish bat npm neofetch htop thefuck
@@ -130,6 +130,7 @@ gh auth refresh -h github.com -s delete_repo
 mkdir ~/Desktop/utilities
 git clone https://github.com/proffapt/gsync ~/Desktop/utilities/gsync
 ln -s ~/Desktop/dotfiles/public/gsync/.defaults ~/Desktop/utilities/gsync/.defaults
+ln -s ~/Desktop/dotfiles/public/gsync/.fav_editor ~/Desktop/utilities/gsync/.fav_editor
 ln -s ~/Desktop/dotfiles/public/gsync/services ~/Desktop/utilities/gsync/lib/services
 ln -s ~/Desktop/dotfiles/public/gsync/startup.sh ~/Desktop/utilities/gsync/lib/startup.sh
 # getting repos to use with gsync
@@ -161,3 +162,5 @@ rsync -rP ~/Library/Mobile\ Documents/com~apple~CloudDocs/Downloads/* ~/Download
 rsync -rP ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/* ~/Documents/
 rsync -rP ~/Library/Mobile\ Documents/com~apple~CloudDocs/Movies/* ~/Movies/
 
+mkdir ~/sandbox
+mkdir ~/Destkop/github
