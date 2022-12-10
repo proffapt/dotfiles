@@ -88,6 +88,10 @@ ln -s ~/Desktop/dotfiles/public/finicky/.finicky.js ~/.finicky.js
 sudo rm -f /etc/hosts
 sudo ln -s ~/Desktop/dotfiles/private/hosts/hosts /etc/hosts
 
+# setting up aria2 configuration
+mkdir ~/.aria2
+ln -s ~/Desktop/dotfiles/public/aria2.conf ~/.aria2/aria2.conf
+
 # setting up fish shell
 rm -f ~/.config/fish/config.fish
 ln -s ~/Desktop/dotfiles/public/fish/config.fish ~/.config/fish/config.fish
