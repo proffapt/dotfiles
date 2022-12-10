@@ -165,3 +165,17 @@ rsync -rP ~/Library/Mobile\ Documents/com~apple~CloudDocs/Movies/* ~/Movies/
 
 mkdir ~/sandbox
 mkdir -p ~/Desktop/github/_forked ~/Desktop/github/_cloned
+
+cd ~/Desktop/github/_cloned 
+gc proffapt/gyft
+gc proffapt/gyft2
+gc proffapt/gyft-serve
+cd - && cd ~/Desktop/github/
+gc proffapt/own-youtube
+gc proffapt/fERP
+gc proffapt/myREADME
+cd - && cd ~/Desktop/utilities
+gc proffapt/code-runner
+gc proffapt/pomodoro-cli
+
+mkdir ~/Desktop/koss
