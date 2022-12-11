@@ -25,6 +25,7 @@ brew install --cask veracrypt accord keepassxc firefox telegram obsidian warp ke
 ## Installing formulae from brew
 brew install git docker wget curl neovim bash gh fswatch mas fish bat npm neofetch htop thefuck
 sudo npm install yarn -g
+npm i -g who-unfollowed-me
 fish
 
 ## installing from apple store
