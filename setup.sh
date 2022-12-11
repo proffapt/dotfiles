@@ -2,8 +2,7 @@
 
 ## backup drive location: /Users/proffapt/Library/Mobile Documents/com~apple~CloudDocs
 ## get text replacements
-## clone my tools as well
-## install python
+## configure default location of python via soft link to /usr/bin/ptyhon3
 
 ## setting fingerprints for sudo
 echo "Add this into the first entry of the file we being opened"
@@ -44,10 +43,6 @@ nano /etc/shells
 chsh -s $(which fish)
 
 ## some unga boonga
-# defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false
-# defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false
-# defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
-# defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write org.x.X11 wm_ffm -bool true
 defaults write com.apple.Terminal FocusFollowsMouse -string YES
 defaults write ApplePressAndHoldEnabled -bool false
