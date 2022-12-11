@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ## Separating every entry from this script
+## will create "independent" processes of - bash, gtimeout, fswatch
 set -m 
 
 ## Entries for github folder to be synced continuously via the syncscript by gsync
