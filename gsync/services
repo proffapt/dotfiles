@@ -6,5 +6,4 @@ set -m
 ## Entries for github folder to be synced continuously via the syncscript by gsync
 nohup /Users/proffapt/Desktop/utilities/gsync/lib/syncscript -d /Users/proffapt/Desktop/dotfiles/private > /Users/proffapt/Desktop/utilities/gsync/lib/logs/private.log &
 nohup /Users/proffapt/Desktop/utilities/gsync/lib/syncscript -d /Users/proffapt/Desktop/dotfiles/public > /Users/proffapt/Desktop/utilities/gsync/lib/logs/public.log &
-nohup /Users/proffapt/Desktop/utilities/gsync/lib/syncscript -d /Users/proffapt/Desktop/bodhitree > /Users/proffapt/Desktop/utilities/gsync/lib/logs/bodhitree.log &
 nohup /Users/proffapt/Desktop/utilities/gsync/lib/syncscript -d /Users/proffapt/Desktop/obsidian > /Users/proffapt/Desktop/utilities/gsync/lib/logs/obsidian.log 2>/dev/null &
