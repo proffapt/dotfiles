@@ -2,7 +2,7 @@
 
 latest_videoID=$(curl -s https://www.youtube.com/feeds/videos.xml\?playlist_id\=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg | grep -i videoID | cut -d'<' -f2 | cut -d'>' -f2 | tail -n 1)
 
-if [ ! -f ~/.100dop]; then
+if [[ ! -f ~/.100dop ]]; then
 	echo "previous_videoID=$latest_videoID" > ~/.100dop
 fi
 source ~/.100dop
