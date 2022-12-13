@@ -20,7 +20,7 @@ brew upgrade
 
 echo "Login into apple account and configure settings now, by then imma install some stuff"
 ## Installing casks from brew 
-brew install --cask veracrypt accord keepassxc firefox telegram obsidian warp keycastr element finicky bartender docker aldente vlc eiskaltdcpp android-file-transfer mpv slack
+brew install --cask veracrypt swiftcord keepassxc firefox telegram obsidian warp keycastr element finicky bartender docker aldente vlc eiskaltdcpp android-file-transfer mpv slack
 
 ## Installing formulae from brew
 brew install git docker wget curl neovim bash gh fswatch mas fish bat npm neofetch htop thefuck
