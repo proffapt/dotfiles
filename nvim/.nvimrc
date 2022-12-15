@@ -168,8 +168,8 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+" vim.g.loaded_netrw = 1
+" vim.g.loaded_netrwPlugin = 1
 require("nvim-tree").setup()
 
 "   Calling out the plugins
