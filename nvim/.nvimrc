@@ -166,10 +166,6 @@ call deoplete#custom#option('omni_patterns', {
 " For Golang
 let g:deoplete#enable_at_startup = 1
 
-	lua <<EOF
-		require("nvim-autopairs").setup {}
-	EOF
-
 " Setting up colorscheme
 colorscheme codedark
 
