@@ -145,7 +145,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
   " File-browser
   Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
-  Plug 'nvim-tree/nvim-tree.lua'
   " Symnatic checking for syntax errors
   Plug 'dense-analysis/ale'
   " Commenting utility
@@ -167,10 +166,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 call plug#end()
-
-" vim.g.loaded_netrw = 1
-" vim.g.loaded_netrwPlugin = 1
-require("nvim-tree").setup()
 
 "   Calling out the plugins
 call deoplete#custom#option('omni_patterns', {
