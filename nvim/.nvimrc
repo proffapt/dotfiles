@@ -123,6 +123,9 @@ nnoremap <M-right> :vertical resize +2 <cr>
 " Getting out of entry into the terminal mode
 tnoremap jj <C-\><C-n>
 
+" WhichKey keybinding
+nnoremap <leader>? :WhichKey <cr>
+
 " }}}
 
 " PLUGINS ---------------------------------------------------------------- {{{
