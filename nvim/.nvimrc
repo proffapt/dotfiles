@@ -146,6 +146,7 @@ call plug#begin('~/.vim/plugged')
   " File-browser
   Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
   Plug 'nvim-tree/nvim-tree.lua'
+  require("nvim-tree").setup()
   " Symnatic checking for syntax errors
   Plug 'dense-analysis/ale'
   " Commenting utility
