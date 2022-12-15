@@ -137,6 +137,8 @@ let g:python3_host_prog="/usr/bin/python3"
 " Install vim-plugin for this to work
 call plug#begin('~/.vim/plugged')
 
+  " Indent guide-lines
+  Plug 'lukas-reineke/indent-blankline.nvim'
   " which key
   Plug 'folke/which-key.nvim'
   " Autocompletion
