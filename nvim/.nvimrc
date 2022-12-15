@@ -168,6 +168,9 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 "   Calling out the plugins
 call deoplete#custom#option('omni_patterns', {
 \ 'go': '[^. *\t]\.\w*',
