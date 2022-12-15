@@ -134,6 +134,8 @@ let g:python3_host_prog="/usr/bin/python3"
 " Install vim-plugin for this to work
 call plug#begin('~/.vim/plugged')
 
+  " which key
+  Plug 'folke/which-key.nvim'
   " Autocompletion
   Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
   " Symnatic checking for syntax errors
