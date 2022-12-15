@@ -134,8 +134,6 @@ let g:python3_host_prog="/usr/bin/python3"
 " Install vim-plugin for this to work
 call plug#begin('~/.vim/plugged')
 
-  " " Discord presence
-  " Plug 'vimsence/vimsence'
   " Autocompletion
   Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
   " Symnatic checking for syntax errors
@@ -147,11 +145,9 @@ call plug#begin('~/.vim/plugged')
   " Status line
   Plug 'vim-airline/vim-airline'
   " Rainbow brackets
-  Plug 'frazrepo/vim-rainbow'
+  Plug 'windwp/nvim-autopairs'
   " Floating Terminal
   Plug 'voldikss/vim-floaterm'
-  " Multi-cursor
-  Plug 'mg979/vim-visual-multi', {'branch': 'master'}
   " live-server
   Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
   " golang intelisense using gopls
