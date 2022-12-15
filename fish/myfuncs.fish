@@ -17,5 +17,5 @@ function asi --description "AppleStoreInstall - install software from apple stor
 end
 
 function asu --description "AppleStoreUninstall - uninstall software from apple store"
-	mas uninstall $(mas list | fzf | awk '{print $1}')
+	mas uninstall $(mas list | awk '{print $1 " - "$2}' | fzf | awk '{print $1}')
 end
