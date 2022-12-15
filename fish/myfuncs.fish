@@ -11,3 +11,7 @@ function bts --description "Easily pushing bodhitree session updates to github"
 	git commit -m "session $argv"
 	git push origin main
 end
+
+function asi --description "AppleStoreInstall - install software from apple store"
+	mas search $argv | grep -i "$argv" | fzf | awk '{print $1}'
+end
