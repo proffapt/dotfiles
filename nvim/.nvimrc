@@ -143,6 +143,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'folke/which-key.nvim'
   " Autocompletion
   Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
+  " File-browser
+  Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
+  Plug 'nvim-tree/nvim-tree.lua'
   " Symnatic checking for syntax errors
   Plug 'dense-analysis/ale'
   " Commenting utility
