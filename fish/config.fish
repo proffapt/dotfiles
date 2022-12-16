@@ -16,7 +16,7 @@ if status is-interactive
     set PATH /opt/homebrew/sbin $PATH
 
 	## python
-	set -gx "/Users/proffapt/Library/Python/3.9/bin" $PATH
+	set -gx PATH "/Users/proffapt/Library/Python/3.9/bin" $PATH
 
 	## rust
 	set -gx PATH "$HOME/.cargo/bin" $PATH
