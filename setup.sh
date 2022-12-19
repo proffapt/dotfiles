@@ -147,7 +147,6 @@ rm .gsync_init
 
 ## getting things from github
 mkdir -p ~/Desktop/college/
-git clone https://github.com/proffapt/iitkgp-pds-lab ~/Desktop/college/pds
 
 ## getting my other tools
 # getting code runner
