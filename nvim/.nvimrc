@@ -157,6 +157,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'voldikss/vim-floaterm'
   " Golang
   Plug 'fatih/vim-go'
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  let g:deoplete#enable_at_startup = 1
   " live-server
   Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
   " Prettier linter
@@ -180,6 +182,10 @@ let g:coc_global_extensions = [
 	\ 'coc-tsserver' ,
 	\ ]
 
+" For automating autocompletion of golang syntax
+call deoplete#custom#option('omni_patterns', {
+\ 'go': '[^. *\t]\.\w*',
+\})
 
 " }}}
 
