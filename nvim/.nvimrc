@@ -157,6 +157,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'windwp/nvim-autopairs'
   " Floating Terminal
   Plug 'voldikss/vim-floaterm'
+  " Golang
+  Plugin 'fatih/vim-go'
   " live-server
   Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
   " Prettier linter
