@@ -139,8 +139,6 @@ call plug#begin('~/.vim/plugged')
 
   " Indent guide-lines
   Plug 'lukas-reineke/indent-blankline.nvim'
-  " which key
-  Plug 'folke/which-key.nvim'
   " Autocompletion
   Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
   " File-browser
