@@ -159,21 +159,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'voldikss/vim-floaterm'
   " live-server
   Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
-  " golang intelisense using gopls
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   " Prettier linter
   "" post install (yarn install | npm install) then load plugin only for editing supported files
   Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 call plug#end()
-
-"   Calling out the plugins
-call deoplete#custom#option('omni_patterns', {
-\ 'go': '[^. *\t]\.\w*',
-\})
-
-" For Golang
-let g:deoplete#enable_at_startup = 1
 
 " Setting up colorscheme
 colorscheme codedark
