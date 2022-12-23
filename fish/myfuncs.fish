@@ -7,6 +7,7 @@ function gt --description "Moving to directories seamlesly"
 end
 
 function bts --description "Easily pushing bodhitree session updates to github"
+	bt
 	git add .
 	git commit -m "session $argv"
 	git push origin main
