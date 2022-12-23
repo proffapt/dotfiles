@@ -11,6 +11,7 @@ function bts --description "Easily pushing bodhitree session updates to github"
 	git add .
 	git commit -m "session $argv"
 	git push origin main
+	cd -
 end
 
 function asi --description "AppleStoreInstall - install software from apple store"
