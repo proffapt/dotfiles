@@ -21,7 +21,3 @@ end
 function asu --description "AppleStoreUninstall - uninstall software from apple store"
 	sudo mas uninstall $(mas list | awk '{print $1 " - "$2}' | fzf | awk '{print $1}')
 end
-
-function b- --description "Using the bash shell to execute the command instead of fish"
-	bash -c '$argv'
-end
