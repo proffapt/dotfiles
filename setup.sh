@@ -23,7 +23,7 @@ echo "Login into apple account and configure settings now, by then imma install 
 brew install --cask veracrypt discord keepassxc firefox telegram obsidian warp keycastr element finicky bartender docker aldente vlc eiskaltdcpp android-file-transfer mpv slack vscodium
 
 ## Installing formulae from brew
-brew install git docker wget curl neovim bash gh fswatch mas fish bat npm neofetch htop thefuck
+brew install git docker wget curl neovim bash gh fswatch mas fish bat npm neofetch htop thefuck shellcheck tldr shfmt
 sudo npm install yarn -g
 npm i -g who-unfollowed-me
 
@@ -40,10 +40,10 @@ mas install 937984704 #amphetamine
 
 ## switching to fish
 echo "Add the following into the file being opened"
-echo $(which fish)
+"$(which fish)"
 sleep 5
 nano /etc/shells
-chsh -s $(which fish)
+chsh -s "$(which fish)"
 
 ## some unga boonga
 defaults write org.x.X11 wm_ffm -bool true
@@ -56,8 +56,7 @@ defaults write com.apple.screecapture type JPG
 
 ## cracked software
 echo "Cracked Sofware:"
-echo 
-"
+echo "
 	- Alfred
 	- Audio Hijack
 	- Sound Source
