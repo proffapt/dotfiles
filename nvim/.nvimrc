@@ -164,6 +164,8 @@ call plug#begin('~/.vim/plugged')
   " Prettier linter
   "" post install (yarn install | npm install) then load plugin only for editing supported files
   Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+  " Markdown preview
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 call plug#end()
 
