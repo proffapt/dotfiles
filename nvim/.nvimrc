@@ -100,7 +100,7 @@ nnoremap <expr> tt execute(':ls! hR') ==? "" ? ":FloatermNew --title=terminal --
 nnoremap <leader>q :q <cr>
 nnoremap <leader>w :w <cr>
 nnoremap <leader>s :wq <cr>
-inoremap jj <Esc>
+inoremap ;; <Esc>
 
 "   NVIM windows:
 
@@ -118,7 +118,7 @@ nnoremap <M-left> :vertical resize -2 <cr>
 nnoremap <M-right> :vertical resize +2 <cr>
 
 " Getting out of entry into the terminal mode
-tnoremap jj <C-\><C-n>
+tnoremap ;; <C-\><C-n>
 
 " WhichKey keybinding
 nnoremap <leader>? :WhichKey <cr>
