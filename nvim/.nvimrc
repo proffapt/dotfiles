@@ -104,9 +104,6 @@ inoremap jj <Esc>
 
 "   NVIM windows:
 
-" For my file explorer
-nnoremap <leader>f :Lex! <cr>
-
 " For my tabs
 nnoremap <leader>t :tabedit <cr>
 
