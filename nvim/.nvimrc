@@ -100,7 +100,7 @@ nnoremap <expr> tt execute(':ls! hR') ==? "" ? ":FloatermNew --title=terminal --
 nnoremap <leader>q :q <cr>
 nnoremap <leader>w :w <cr>
 nnoremap <leader>s :wq <cr>
-inoremap  <Esc>
+inoremap jj <Esc>
 
 "   NVIM windows:
 
