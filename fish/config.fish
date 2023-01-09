@@ -16,13 +16,16 @@ if status is-interactive
     set PATH /opt/homebrew/sbin $PATH
 
 	## python
-	set -gx PATH "/Users/proffapt/Library/Python/3.9/bin" $PATH
+	set -Ux PATH "/Users/proffapt/Library/Python/3.9/bin" $PATH
 
 	## rust
-	set -gx PATH "$HOME/.cargo/bin" $PATH
+	set -Ux PATH "$HOME/.cargo/bin" $PATH
 
 	## java
 	set JAVA_HOME "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+
+	## gurobi
+	set -Ux GRB_LICENSE_FILE "/Users/proffapt/certs+licenses/gurobi.lic"
 
 	## Custom env variables
 	set pds "~/Desktop/college/PDS/Section_01/Assignments"

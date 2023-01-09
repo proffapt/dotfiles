@@ -182,6 +182,7 @@ let g:coc_global_extensions = [
 	\ 'coc-json' ,
 	\ 'coc-html' ,
 	\ 'coc-tsserver' ,
+	\ 'coc-pyright' ,
 	\ ]
 
 " For automating autocompletion of golang syntax
