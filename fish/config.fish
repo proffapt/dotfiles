@@ -15,20 +15,22 @@ if status is-interactive
     set PATH /opt/homebrew/bin $PATH
     set PATH /opt/homebrew/sbin $PATH
 
+	## golang
+	set PATH /Users/proffapt/go/bin $PATH
+
 	## python
-	set -Ux PATH "/Users/proffapt/Library/Python/3.9/bin" $PATH
+	set PATH /Users/proffapt/Library/Python/3.9/bin $PATH
 
 	## rust
-	set -Ux PATH "$HOME/.cargo/bin" $PATH
+	set PATH $HOME/.cargo/bin $PATH
 
 	## java
-	set JAVA_HOME "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+	set JAVA_HOME /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
 
 	## gurobi
 	set -Ux GRB_LICENSE_FILE "/Users/proffapt/certs+licenses/gurobi.lic"
 
 	## Custom env variables
-	set pds "~/Desktop/college/PDS/Section_01/Assignments"
     set PATH ~/Desktop/scripts $PATH ##scripts
 
 	### Configuring autojump
@@ -37,6 +39,3 @@ if status is-interactive
 	### Configuring thefuck
 	thefuck --alias | source
 end
-
-## iterm2 shell integration
-test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
