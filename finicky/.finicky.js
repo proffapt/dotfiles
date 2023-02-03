@@ -13,7 +13,7 @@ module.exports = {
 	{
 	  // Redirecting to spotify app
 	  match: ["*spotify.com*"],
-	  browser: "/Users/proffapt/Applications/Spotify.app"
+	  browser: "/Applications/Spotify.app"
 	},
 	{
 	  // Redirecting to zoom app
