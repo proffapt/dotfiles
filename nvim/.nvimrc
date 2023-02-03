@@ -38,7 +38,7 @@ filetype plugin on
 "Enabling syntax highlighting
 " -- syntax on
 set wrap
-set shiftwidth=4
+set shiftwidth=2
 "Specifying the number of columns a tab takes
 set tabstop=2
 "Making above setted things invokable
