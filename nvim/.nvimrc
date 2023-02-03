@@ -40,7 +40,7 @@ filetype plugin on
 set wrap
 set shiftwidth=4
 "Specifying the number of columns a tab takes
-set tabstop=4
+set tabstop=2
 "Making above setted things invokable
 set smarttab
 
