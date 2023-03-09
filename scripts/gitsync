@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd /Users/proffapt/Desktop/dotfiles/private; git add . && git commit -m "update"
-cd /Users/proffapt/Desktop/dotfiles/public; git add . && git commit -m "update"
-cd /Users/proffapt/Desktop/obsidian; git add . && git commit -m "update"
+cd /Users/proffapt/Desktop/dotfiles/private; git add . && git commit -m "update" && git push origin
+cd /Users/proffapt/Desktop/dotfiles/public; git add . && git commit -m "update" && git push origin
+cd /Users/proffapt/Desktop/obsidian; git add . && git commit -m "update" && git push origin
