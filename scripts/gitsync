@@ -1,5 +1,18 @@
 #!/bin/bash
 
-cd /Users/proffapt/Desktop/dotfiles/private; git add . && git commit -m "update" && git push origin
-cd /Users/proffapt/Desktop/dotfiles/public; git add . && git commit -m "update" && git push origin
-cd /Users/proffapt/Desktop/obsidian; git add . && git commit -m "update" && git push origin
+# array of directories to check
+directories=(
+  "/Users/proffapt/Desktop/dotfiles/private"
+  "/Users/proffapt/Desktop/dotfiles/public"
+  "/Users/proffapt/Desktop/obsidian"
+)
+
+# iterate over directories and check for changes
+for dir in "${directories[@]}"; do
+  cd "$dir" || exit
+  if [ -n "$(git status --porcelain)" ]; then
+    git add .
+    git commit -m "update"
+    git push origin
+  fi
+done
