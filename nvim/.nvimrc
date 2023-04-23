@@ -76,18 +76,16 @@ nnoremap <leader>y "*y
 vnoremap <leader>p "*p
 nnoremap <leader>p "*p
 
-"   Sourcing my vimrc
+"   Sourcing nvimrc
 nnoremap <leader>x :source ~/.config/nvim/init.vim<cr>
-"   Editing my vimrc
+"   Editing nvimrc
 nnoremap <leader>e :vsplit <cr>:e ~/.nvimrc <cr>
 
-"	Reloading bracy
+"	Reloading bracey
+" Bracey is realtime web-page reloader while doing frontend
 nnoremap <leader>r :w <cr>:BraceyReload<cr>
 
-"	Prettier linting
-nnoremap <leader>l :Prettier <cr>
-
-"   Keybinding for my code-runner
+"   Keybinding for code-runner
 nnoremap rr :w<cr> :FloatermNew --title=code-runner --height=0.6 --width=0.7 --autoclose=0 run % <cr>
 nnoremap <expr> ff expand('%:t') ==? 'fish' ? ":FloatermToggle <cr>" : execute(':ls! hR') ==? "" ? ":FloatermNew --title=code-runner --height=0.6 --width=0.7 <cr> <C-\><C-n>:FloatermToggle <cr>:w <cr>:FloatermSend --title=code-runner run % <cr>:FloatermToggle <cr>" : ":w <cr>:FloatermSend --title=code-runner run % <cr>:FloatermToggle <cr>"
 tnoremap ff <C-\><C-n>:FloatermToggle <cr>
@@ -120,9 +118,6 @@ nnoremap <M-right> :vertical resize +2 <cr>
 " Getting out of entry into the terminal mode
 tnoremap jj <C-\><C-n>
 
-" WhichKey keybinding
-nnoremap <leader>? :WhichKey <cr>
-
 " }}}
 
 " PLUGINS ---------------------------------------------------------------- {{{
@@ -136,10 +131,6 @@ call plug#begin('~/.vim/plugged')
 
   " Indent guide-lines
   Plug 'lukas-reineke/indent-blankline.nvim'
-  " Autocompletion
-  Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
-  " File-browser
-  Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
   " Symnatic checking for syntax errors
   Plug 'dense-analysis/ale'
   " Commenting utility
@@ -148,19 +139,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'EdenEast/nightfox.nvim'
   " Status line
   Plug 'vim-airline/vim-airline'
-  " Rainbow brackets
-  Plug 'windwp/nvim-autopairs'
   " Floating Terminal
   Plug 'voldikss/vim-floaterm'
-  " Golang
-  Plug 'fatih/vim-go'
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  let g:deoplete#enable_at_startup = 1
   " live-server
   Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
-  " Prettier linter
-  "" post install (yarn install | npm install) then load plugin only for editing supported files
-  Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
   " Markdown preview
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
   " Ranger support
@@ -171,24 +153,6 @@ call plug#end()
 
 " Setting up colorscheme
 colorscheme codedark
-
-" Configuring coc.vim
-let g:coc_global_extensions = [
-	\ 'coc-snippets' ,
-	\ 'coc-pairs' , 
-	\ 'coc-clangd' ,
-	\ 'coc-sh' ,
-	\ 'coc-java' ,
-	\ 'coc-json' ,
-	\ 'coc-html' ,
-	\ 'coc-tsserver' ,
-	\ 'coc-pyright' ,
-	\ ]
-
-" For automating autocompletion of golang syntax
-call deoplete#custom#option('omni_patterns', {
-\ 'go': '[^. *\t]\.\w*',
-\})
 
 " }}}
 
