@@ -5,6 +5,7 @@ directories=(
   "/Users/proffapt/Desktop/dotfiles/private"
   "/Users/proffapt/Desktop/dotfiles/public"
   "/Users/proffapt/Desktop/obsidian"
+  "/Users/proffapt/.config/nvim/lua/custom"
 )
 
 # iterate over directories and check for changes
