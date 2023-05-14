@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export DENO_INSTALL:/Users/proffapt/\x2edeno
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GRB_LICENSE_FILE:/Users/proffapt/certs\x2blicenses/gurobi\x2elic
 SETUVAR --export PAGER:bat

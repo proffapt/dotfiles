@@ -1,8 +1,8 @@
 if status is-interactive
-    ########### Commands to run in interactive sessions can go here	#############
+  ########### Commands to run in interactive sessions can go here	#############
 
 	### Configuring greeter
-    set fish_greeting
+  set fish_greeting
 
 	### Sourcing my 'fishy' functions
 	source ~/.config/fish/functions/myfuncs.fish 
@@ -29,11 +29,14 @@ if status is-interactive
 	## ----
 
 	## Custom env variables
-    set PATH ~/Desktop/scripts $PATH # scripts
+  set PATH ~/Desktop/scripts $PATH # scripts
 
 	### Configuring homebrew
-    set PATH /opt/homebrew/bin $PATH
-    set PATH /opt/homebrew/sbin $PATH
+  set PATH /opt/homebrew/bin $PATH
+  set PATH /opt/homebrew/sbin $PATH
+
+  set -Ux DENO_INSTALL "/Users/proffapt/.deno"
+  set PATH "$DENO_INSTALL/bin" $PATH
 
 	### Configuring autojump
 	[ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish
