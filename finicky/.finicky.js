@@ -1,7 +1,7 @@
 // ~/.finicky.js
 
 module.exports = {
-  defaultBrowser: "LibreWolf",
+  defaultBrowser: "Arc",
   rewrite: [
     {
       // Redirect all urls to use https
@@ -14,11 +14,6 @@ module.exports = {
 	  // Redirecting to spotify app
 	  match: ["*spotify.com*"],
 	  browser: "/Applications/Spotify.app"
-	},
-	{
-	  // Redirecting to zoom app
-	  match: ["*zoom.us*"],
-	  browser: "/Applications/zoom.us.app"
 	},
 	{
 	  // Redirecting to Telegram app
