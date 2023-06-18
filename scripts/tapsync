@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Get the repo name, version and release notes
+repo_name="basename $(pwd)"
+read -rp "Release version: " version
+read -rp "Notes for the release: " notes
+
+# Files used
+zip_file="v${version}.tar.gz"
+rb_file="$HOME/Desktop/github/brewtap/${repo_name}.rb"
+
+# Create the tag 
+git tag -a v"${version}" -m "update: $version"
+git push origin v"${version}"
+
+# Create the release
+gh release create v${version} --title "Release v$version" --notes "$notes"
+
+# Get the checksum
+if [ -f "$zip_file" ]; then
+  rm -f "$zip_file"
+fi
+wget -q https://github.com/proffapt/${repo_name}/archive/refs/tags/${zip_file}
+checksum=$(shasum -a 256 v${version}.tar.gz | cut -d' ' -f1)
+rm $zip_file
+
+# Update checksum and url with new version
+sed -i '' "s/tags\/v.*/tags\/"$zip_file"\"/g" "$rb_file"
+sed -i '' "s/.*sha256.*/  sha256 \"${checksum}\"/g" "$rb_file"
+
+# Push the changes to the tap
+cd $HOME/Desktop/github/brewtap/
+git add ${repo_name}.rb
+git commit -m "${repo_name}: release ${version}"
+cd -
