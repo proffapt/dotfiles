@@ -1,11 +1,13 @@
 [user]
 	email = proffapt@pm.me
 	name = proffapt
+	signingkey = 30DDA2CFE95AAAD4
 [init]
 	defaultBranch = main
 [pull]
     rebase = false
 [commit]
     verbose = true
+	gpgsign = false
 [credential]
 	helper = store
