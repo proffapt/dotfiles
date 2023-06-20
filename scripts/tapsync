@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get the repo name, version and release notes
-repo_name="basename $(pwd)"
+repo_name="basename $(git config --get remote.origin.url)"
 read -rp "Release version: " version
 read -rp "Notes for the release: " notes
 
