@@ -11,11 +11,6 @@ module.exports = {
   ],      
   handlers: [
 	{
-	  // Redirecting to spotify app
-	  match: ["*spotify.com*"],
-	  browser: "/Applications/Spotify.app"
-	},
-	{
 	  // Redirecting to Telegram app
 	  match: ["*t.me*"],
 	  browser: "/Applications/Telegram.app"
@@ -24,11 +19,6 @@ module.exports = {
 	  // Redirecting to Discord app
 	  match: ["*discord.gg*"],
 	  browser: "/Applications/Discord.app"
-	}, 
-	{
-	  // Redirecting to Slack app
-	  match: ["*kossiitkgp.slack.com*"],
-	  browser: "/Applications/Slack.app"
-	}
+	} 
   ]
 };
