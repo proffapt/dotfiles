@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 
 # Get the repo name, version and release notes
 repo_name="basename $(git config --get remote.origin.url)"
