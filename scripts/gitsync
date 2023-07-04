@@ -1,6 +1,8 @@
 #!/opt/homebrew/bin/bash
 
+# var declarations
 GIT=/opt/homebrew/bin/git
+# THRESHOLD=100
 
 # array of directories to check
 directories=(
@@ -13,9 +15,19 @@ directories=(
 # iterate over directories and check for changes
 for dir in "${directories[@]}"; do
   cd "$dir" || exit
+  
+  # If there are changes, reflect them on github
   if [ -n "$("$GIT" status --porcelain)" ]; then
     "$GIT" add .
     "$GIT" commit -m "update"
     "$GIT" push origin
   fi
+
+  # # If the commit count is >Threshold, squash the commits
+  # commit_count=$(git rev-list --count HEAD) # Current commit count
+  # if ((commit_count > THRESHOLD)); then
+  #   git reset --soft HEAD~$commit_count
+  #   git commit -m "squashed commit history (threshold = $THRESHOLD)"
+  #   git push --force origin
+  # fi
 done
