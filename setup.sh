@@ -57,12 +57,9 @@ defaults write com.apple.screecapture type JPG
 ## cracked software
 echo "Cracked Sofware:"
 echo "
-	- Alfred
   - Bartender
 	- Sound Source
 	- SlidePad
-	- Maccy
-	- Rectangle Pro
 	- Networker Pro
 "
 # decide for what I really need a crack.
