@@ -1,16 +1,9 @@
-#!/opt/homebrew/bin/bash
-
-gc() {
-    # Cloning github directories
-    git clone "https://github.com/$1"
-}
-
-gt() {
+goto(){
     # Moving to directories seamlessly
     cd "$(autojump "$1")"
 }
 
-bts() {
+bts(){
     # Easily pushing bodhitree session updates to github
     bt
     git add .
@@ -19,12 +12,12 @@ bts() {
     cd -
 }
 
-asi() {
+asi(){
     # AppleStoreInstall - install software from apple store
     mas install "$(mas search "$1" | grep -i "$1" | fzf | awk '{print $1}')"
 }
 
-asu() {
+asu(){
     # AppleStoreUninstall - uninstall software from apple store
     sudo mas uninstall "$(mas list | awk '{print $1 " - " $2}' | fzf | awk '{print $1}')"
 }
