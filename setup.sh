@@ -24,8 +24,12 @@ brew install --cask bitwarden veracrypt discord keepassxc firefox telegram obsid
 
 ## Installing formulae from brew
 brew install git docker wget curl neovim bash gh fswatch mas bat npm neofetch htop thefuck shellcheck tldr shfmt autojump
+## Installing who-unfollowed-me
 sudo npm install yarn -g
 npm i -g who-unfollowed-me
+## Installing code-runner
+brew tap proffapt/brewtap
+brew install code-runner
 
 ## installing from apple store
 mas install 937984704 # amphetamine
@@ -50,7 +54,6 @@ mkdir ~/Desktop/dotfiles
 git config --global credential.helper store
 git clone https://github.com/proffapt/dotfiles ~/Desktop/dotfiles/public
 git clone https://github.com/proffapt/dotfiles-private ~/Desktop/dotfiles/private
-git clone https://github.com/proffapt/obsidian ~/Desktop/obsidian/
 
 # setting up git
 rm -f ~/.gitconfig
@@ -70,14 +73,26 @@ ln -s ~/Desktop/dotfiles/public/aria2.conf ~/.aria2/aria2.conf
 
 # setting up zsh shell
 mkdir ~/.zshconf
+rm -f ~/.zshrc
 ln -s ~/Desktop/dotfiles/private/shell_aliases ~/.zshconf/alias
-
-rm -f ~/.config/fish/config.fish
-ln -s ~/Desktop/dotfiles/public/fish/config.fish ~/.config/fish/config.fish
-rm -f ~/.config/fish/functions/myfuncs.fish
-ln -s ~/Desktop/dotfiles/public/fish/myfuncs.fish ~/.config/fish/functions/myfuncs.fish
+ln -s ~/Desktop/dotfiles/public/zsh/functions ~/.zshconf/functions
+ln -s ~/Desktop/dotfiles/public/zsh/.zshrc ~/.zshrc
 ## sourcing fish files
-source ~/.config/fish/config.fish ~/.config/fish/fish_variables ~/.config/fish/functions/fish_prompt.fish ~/.config/fish/functions/myfuncs.fish ~/.config/fish/functions/aliases.fish
+source ~/.zshrc ~/.zprofile
+
+# setting up scripts
+mkdir ~/Desktop/scripts
+ln -s ~/Desktop/dotfiles/public/scripts/* ~/Desktop/scripts/
+ln -s ~/Desktop/dotfiles/private/scripts/* ~/Desktop/scripts/
+
+## getting things from github
+git clone https://github.com/proffapt/obsidian ~/Desktop/obsidian/
+
+## Creating directory structure
+mkdir -p ~/Desktop/college/
+mkdir ~/sandbox
+mkdir -p ~/Desktop/github/_forked ~/Desktop/github/_cloned
+mkdir ~/Desktop/koss
 
 # setting up nvim
 pip3 install pynvim # https://carakan.net/blog/2020/04/configuring-python3-on-neovim/
@@ -90,44 +105,8 @@ sleep 5
 nvim /tmp/test.txt && rm -f /tmp/test.txt
 ln -s ~/Desktop/dotfiles/public/nvim/codedark.vim ~/.vim/plugged/nightfox.nvim/colors/codedark.vim
 
-# setting up scripts
-mkdir ~/Desktop/scripts
-ln -s ~/Desktop/dotfiles/public/scripts/editor ~/Desktop/scripts/editor
-ln -s ~/Desktop/dotfiles/public/scripts/cfmt ~/Desktop/scripts/cfmt
-ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db ~/Desktop/scripts/kwoc-db
-ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db-newprojects ~/Desktop/scripts/kwoc-db-newprojects
-ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db-stats ~/Desktop/scripts/kwoc-db-stats
-
-## getting things from github
-mkdir -p ~/Desktop/college/
-
-## getting my other tools
-# getting code runner
-sudo mkdir /usr/local/bin/
-curl https://raw.githubusercontent.com/proffapt/code-runner/main/setup.sh | bash
-
-#gsync setup??
-# setup a rsync backup to icloud for these folders.
-
 # getting files from backup
 rsync -rP ~/Library/Mobile\ Documents/com~apple~CloudDocs/Pictures/* ~/Pictures/
 rsync -rP ~/Library/Mobile\ Documents/com~apple~CloudDocs/Downloads/* ~/Downloads/
 rsync -rP ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/* ~/Documents/
 rsync -rP ~/Library/Mobile\ Documents/com~apple~CloudDocs/Movies/* ~/Movies/
-
-mkdir ~/sandbox
-mkdir -p ~/Desktop/github/_forked ~/Desktop/github/_cloned
-
-cd ~/Desktop/github/_cloned 
-gc proffapt/gyft
-gc proffapt/gyft2
-gc proffapt/gyft-serve
-cd - && cd ~/Desktop/github/
-gc proffapt/own-youtube
-gc proffapt/fERP
-gc proffapt/myREADME
-cd - && cd ~/Desktop/utilities
-gc proffapt/code-runner
-gc proffapt/pomodoro-cli
-
-mkdir ~/Desktop/koss
