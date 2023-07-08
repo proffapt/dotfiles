@@ -1,0 +1,30 @@
+#!/opt/homebrew/bin/bash
+
+gc() {
+    # Cloning github directories
+    git clone "https://github.com/$1"
+}
+
+gt() {
+    # Moving to directories seamlessly
+    cd "$(autojump "$1")"
+}
+
+bts() {
+    # Easily pushing bodhitree session updates to github
+    bt
+    git add .
+    git commit -m "session $1"
+    git push origin main
+    cd -
+}
+
+asi() {
+    # AppleStoreInstall - install software from apple store
+    mas install "$(mas search "$1" | grep -i "$1" | fzf | awk '{print $1}')"
+}
+
+asu() {
+    # AppleStoreUninstall - uninstall software from apple store
+    sudo mas uninstall "$(mas list | awk '{print $1 " - " $2}' | fzf | awk '{print $1}')"
+}

@@ -18,36 +18,20 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew update
 brew upgrade
 
-echo "Login into apple account and configure settings now, by then imma install some stuff"
+echo "Login into apple account and configure settings now, by then imma install some stuff" && sleep 5
 ## Installing casks from brew 
-brew install --cask veracrypt discord keepassxc firefox telegram obsidian warp keycastr element finicky docker aldente eiskaltdcpp android-file-transfer mpv slack ranger
+brew install --cask bitwarden veracrypt discord keepassxc firefox telegram obsidian warp keycastr element finicky docker aldente eiskaltdcpp android-file-transfer mpv slack ranger
 
 ## Installing formulae from brew
-brew install git docker wget curl neovim bash gh fswatch mas fish bat npm neofetch htop thefuck shellcheck tldr shfmt
+brew install git docker wget curl neovim bash gh fswatch mas bat npm neofetch htop thefuck shellcheck tldr shfmt autojump
 sudo npm install yarn -g
 npm i -g who-unfollowed-me
 
-## Invoking the fish shell from now on..
-fish
-
 ## installing from apple store
-# Installing bitwarden
-mas install 1352778147
-echo "Bitwarden Installed, sign in into github in safari for further needs"
-sleep 5
-mas install 771076721 #hotspot shield
-mas install 937984704 #amphetamine
-
-## switching to fish
-echo "Add the following into the file being opened"
-"$(which fish)"
-sleep 5
-nano /etc/shells
-chsh -s "$(which fish)"
+mas install 937984704 # amphetamine
 
 ## some unga boonga
 defaults write org.x.X11 wm_ffm -bool true
-defaults write com.apple.Terminal FocusFollowsMouse -string YES
 defaults write ApplePressAndHoldEnabled -bool false
 defaults write com.apple.finder CreateDesktop false
 defaults write com.apple.dock autohide-delay -float 0
@@ -55,20 +39,18 @@ defaults write PMPrintingExpandedStateForPrint -bool TRUE
 defaults write com.apple.screecapture type JPG
 
 ## cracked software
-echo "Cracked Sofware:"
-echo "
+echo "Cracked Sofwares:
   - Bartender
 	- Sound Source
 	- SlidePad
-	- Networker Pro
-"
-# decide for what I really need a crack.
+	- Networker Pro"
 
 ## setting up dotfiles
 mkdir ~/Desktop/dotfiles
 git config --global credential.helper store
 git clone https://github.com/proffapt/dotfiles ~/Desktop/dotfiles/public
 git clone https://github.com/proffapt/dotfiles-private ~/Desktop/dotfiles/private
+git clone https://github.com/proffapt/obsidian ~/Desktop/obsidian/
 
 # setting up git
 rm -f ~/.gitconfig
@@ -86,24 +68,19 @@ sudo ln -s ~/Desktop/dotfiles/private/hosts/hosts /etc/hosts
 mkdir ~/.aria2
 ln -s ~/Desktop/dotfiles/public/aria2.conf ~/.aria2/aria2.conf
 
-# setting up fish shell
+# setting up zsh shell
+mkdir ~/.zshconf
+ln -s ~/Desktop/dotfiles/private/shell_aliases ~/.zshconf/alias
+
 rm -f ~/.config/fish/config.fish
 ln -s ~/Desktop/dotfiles/public/fish/config.fish ~/.config/fish/config.fish
-rm -f ~/.config/fish/fish_variables
-ln -s ~/Desktop/dotfiles/public/fish/fish_variables ~/.config/fish/fish_variables
-rm -f ~/.config/fish/functions/fish_prompt.fish
-ln -s ~/Desktop/dotfiles/public/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
 rm -f ~/.config/fish/functions/myfuncs.fish
 ln -s ~/Desktop/dotfiles/public/fish/myfuncs.fish ~/.config/fish/functions/myfuncs.fish
-rm -f ~/.config/fish/functions/aliases.fish
-ln -s ~/Desktop/dotfiles/private/shell_aliases/aliases.fish ~/.config/fish/functions/aliases.fish
 ## sourcing fish files
 source ~/.config/fish/config.fish ~/.config/fish/fish_variables ~/.config/fish/functions/fish_prompt.fish ~/.config/fish/functions/myfuncs.fish ~/.config/fish/functions/aliases.fish
 
-pip3 install pynvim
-## https://carakan.net/blog/2020/04/configuring-python3-on-neovim/
-
 # setting up nvim
+pip3 install pynvim # https://carakan.net/blog/2020/04/configuring-python3-on-neovim/
 rm -f ~/.nvimrc
 ln -s ~/Desktop/dotfiles/public/nvim/.nvimrc ~/.nvimrc
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -120,28 +97,6 @@ ln -s ~/Desktop/dotfiles/public/scripts/cfmt ~/Desktop/scripts/cfmt
 ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db ~/Desktop/scripts/kwoc-db
 ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db-newprojects ~/Desktop/scripts/kwoc-db-newprojects
 ln -s ~/Desktop/dotfiles/private/scripts/kwoc-db-stats ~/Desktop/scripts/kwoc-db-stats
-
-## setting up gsync 
-# initialising gsync
-gh auth login
-gh auth refresh -h github.com -s delete_repo
-# configure gsync
-mkdir ~/Desktop/utilities
-git clone https://github.com/proffapt/gsync ~/Desktop/utilities/gsync
-ln -s ~/Desktop/dotfiles/public/gsync/.defaults ~/Desktop/utilities/gsync/.defaults
-ln -s ~/Desktop/dotfiles/public/gsync/.fav_editor ~/Desktop/utilities/gsync/.fav_editor
-ln -s ~/Desktop/dotfiles/public/gsync/services ~/Desktop/utilities/gsync/lib/services
-ln -s ~/Desktop/dotfiles/public/gsync/startup.sh ~/Desktop/utilities/gsync/lib/startup.sh
-# getting repos to use with gsync
-git clone https://github.com/proffapt/bodhitree ~/Desktop/bodhitree
-git clone https://github.com/proffapt/obsidian ~/Desktop/obsidian/
-# configuring gsync on the directories
-echo "The existense of this file signifies that gsync was ran atleast once on this folder." > .gsync_init
-rsync .gsync_init ~/Desktop/bodhitree/ 
-rsync .gsync_init ~/Desktop/obsidian/
-rsync .gsync_init ~/Desktop/dotfiles/public/
-rsync .gsync_init ~/Desktop/dotfiles/private/
-rm .gsync_init
 
 ## getting things from github
 mkdir -p ~/Desktop/college/
