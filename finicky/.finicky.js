@@ -4,8 +4,8 @@ module.exports = {
   defaultBrowser: "Arc",
   rewrite: [
     {
-      // Redirect all urls to use https
-      match: ({ url }) => url.protocol === "http",
+      // Redirect all non-localhost URLs to use https
+      match: ({ url }) => url.protocol === "http" && !/^(localhost|127\.0\.0\.1)/.test(url.host),
       url: { protocol: "https" }
     }
   ],      

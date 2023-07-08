@@ -38,7 +38,7 @@ zstyle ':omz:update' frequency 14
 DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -70,7 +70,7 @@ DISABLE_LS_COLORS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git sudo web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,7 +112,5 @@ PATH=/opt/homebrew/sbin:$PATH # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-## autojump
-[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 ## thefuck
 eval $(thefuck --alias)
