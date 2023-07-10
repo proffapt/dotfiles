@@ -25,6 +25,7 @@ PATH="$DENO_INSTALL/bin:$PATH" # deno
 #
 ### --- Custom ---
 PATH=~/Desktop/scripts:$PATH # scripts
+PATH=~/Desktop/scripts/erp:$PATH # scripts
 PATH=/opt/homebrew/bin:$PATH # homebrew
 PATH=/opt/homebrew/sbin:$PATH # homebrew
 ### ---
