@@ -1,4 +1,4 @@
-#### Sourcing stuff
+### Sourcing stuff
 source ~/.zshconf/alias
 source ~/.zshconf/functions
 
@@ -17,6 +17,7 @@ export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Ho
 #
 ### --- Languages ---
 PATH=/Users/proffapt/Library/Python/3.9/bin:$PATH # python
+PATH=/Users/proffapt/Library/Python/3.9/bin:$PATH # python
 PATH=/Users/proffapt/go/bin:$PATH # golang
 PATH=$HOME/.cargo/bin:$PATH # rust
 PATH="$DENO_INSTALL/bin:$PATH" # deno
@@ -34,7 +35,5 @@ PATH=/opt/homebrew/sbin:$PATH # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-## autojump
-[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 ## thefuck
 eval $(thefuck --alias)
