@@ -73,5 +73,3 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git sudo web-search)
 
 source $ZSH/oh-my-zsh.sh
-
-################ USER CONFIGURATION ####################
