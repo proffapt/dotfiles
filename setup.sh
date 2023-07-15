@@ -19,11 +19,8 @@ brew update
 brew upgrade
 
 echo "Login into apple account and configure settings now, by then imma install some stuff" && sleep 5
-## Installing casks from brew 
-brew install --cask bitwarden veracrypt discord keepassxc firefox telegram obsidian warp keycastr element finicky docker aldente eiskaltdcpp android-file-transfer mpv slack ranger
-
-## Installing formulae from brew
-brew install git docker wget curl neovim bash gh fswatch mas bat npm neofetch htop thefuck shellcheck tldr shfmt diff-so-fancy
+## Installing stuff from brew
+brew install bitwarden veracrypt discord keepassxc firefox telegram obsidian warp keycastr element finicky docker aldente eiskaltdcpp android-file-transfer mpv slack ranger visual-studio-code git docker wget curl neovim bash gh fswatch mas bat npm neofetch htop thefuck shellcheck tldr shfmt diff-so-fancy
 ## Installing who-unfollowed-me
 sudo npm install yarn -g
 npm i -g who-unfollowed-me
