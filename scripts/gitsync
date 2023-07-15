@@ -8,6 +8,7 @@ GIT=/opt/homebrew/bin/git
 directories=(
   "/Users/proffapt/Desktop/dotfiles/private"
   "/Users/proffapt/Desktop/dotfiles/public"
+  "/Users/proffapt/Desktop/dotfiles/vscode-conf"
   "/Users/proffapt/Desktop/obsidian"
   "/Users/proffapt/.config/nvim/lua/custom"
 )
