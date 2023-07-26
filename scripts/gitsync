@@ -6,11 +6,11 @@ GIT=/opt/homebrew/bin/git
 
 # array of directories to check
 directories=(
-  "/Users/proffapt/Desktop/dotfiles/private"
-  "/Users/proffapt/Desktop/dotfiles/public"
-  "/Users/proffapt/Desktop/dotfiles/vscode-conf"
   "/Users/proffapt/Desktop/obsidian"
+  "/Users/proffapt/Desktop/dotfiles/public"
   "/Users/proffapt/.config/nvim/lua/custom"
+  "/Users/proffapt/Desktop/dotfiles/private"
+  "/Users/proffapt/Desktop/dotfiles/vscode-conf"
 )
 
 # iterate over directories and check for changes
