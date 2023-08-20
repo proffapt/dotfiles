@@ -17,7 +17,6 @@ export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Ho
 #
 ### --- Languages ---
 PATH=/Users/proffapt/Library/Python/3.9/bin:$PATH # python
-PATH=/Users/proffapt/Library/Python/3.9/bin:$PATH # python
 PATH=/Users/proffapt/go/bin:$PATH # golang
 PATH=$HOME/.cargo/bin:$PATH # rust
 PATH="$DENO_INSTALL/bin:$PATH" # deno
