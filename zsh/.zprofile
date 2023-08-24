@@ -26,6 +26,7 @@ PATH="$DENO_INSTALL/bin:$PATH" # deno
 PATH=/opt/homebrew/bin:$PATH # homebrew
 PATH=/opt/homebrew/sbin:$PATH # homebrew
 PATH=~/Desktop/scripts:$PATH # my scripts
+PATH=~/Desktop/iitkgp/erp/_scripts:$PATH # erp scripts
 PATH=~/Desktop/iitkgp/koss/KWoC/scripts:$PATH # kwoc scripts
 ### ---
 
