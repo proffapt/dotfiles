@@ -8,6 +8,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=bat
 export LANG=en_US.UTF-8
+export MFTPD=/home/pi/mftp
 export DENO_INSTALL="/Users/proffapt/.deno"
 export GRB_LICENSE_FILE="/Users/proffapt/certs+licenses/gurobi.lic"
 export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
