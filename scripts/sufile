@@ -1,0 +1,14 @@
+#!/opt/homebrew/bin/bash
+
+dir=$(uuidgen | cut -d'-' -f1)
+
+mkdir "/tmp/${dir}"
+cp "$1" "/tmp/${dir}"
+
+cd /tmp || exit 1
+
+zip -r "${dir}.zip" "$dir"
+zipcloak "${dir}.zip"
+
+link=$(curl -s -F"file=@${dir}.zip" https://0x0.st) # Uploading to 0x0.st
+echo "$link" | pbcopy # copying the link

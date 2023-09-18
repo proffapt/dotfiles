@@ -1,3 +1,4 @@
 #!/opt/homebrew/bin/bash
 
-
+link=$(curl -s -F"file=@${1}" https://0x0.st) # Uploading to 0x0.st
+echo "$link" | pbcopy # copying the link
