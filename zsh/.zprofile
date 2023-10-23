@@ -12,6 +12,12 @@ export MFTPD=/home/pi/mftp
 export DENO_INSTALL="/Users/proffapt/.deno"
 export GRB_LICENSE_FILE="/Users/proffapt/certs+licenses/gurobi.lic"
 export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+# For compilers to find postgresql@16:
+  export LDFLAGS="-L/opt/homebrew/opt/postgresql@16/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/postgresql@16/include"
+
+# For pkg-config to find postgresql@16:
+  export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@16/lib/pkgconfig"
 #### ----
 
 #### Configuring PATH variable
@@ -21,6 +27,7 @@ PATH=/Users/proffapt/Library/Python/3.9/bin:$PATH # python
 PATH=/Users/proffapt/go/bin:$PATH # golang
 PATH=$HOME/.cargo/bin:$PATH # rust
 PATH="$DENO_INSTALL/bin:$PATH" # deno
+PATH=/opt/homebrew/opt/postgresql@16/bin:$PATH # postgresql
 ### ---
 #
 ### --- Custom ---
