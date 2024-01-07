@@ -15,6 +15,9 @@ export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Ho
 # For compilers to find postgresql@16:
   export LDFLAGS="-L/opt/homebrew/opt/postgresql@16/lib"
   export CPPFLAGS="-I/opt/homebrew/opt/postgresql@16/include"
+# For compilers to find ruby-latest version:
+  export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
 
 # For pkg-config to find postgresql@16:
   export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@16/lib/pkgconfig"
@@ -28,6 +31,7 @@ PATH=/Users/proffapt/go/bin:$PATH # golang
 PATH=$HOME/.cargo/bin:$PATH # rust
 PATH="$DENO_INSTALL/bin:$PATH" # deno
 PATH=/opt/homebrew/opt/postgresql@16/bin:$PATH # postgresql
+PATH="/opt/homebrew/opt/ruby/bin:$PATH" # ruby
 ### ---
 #
 ### --- Custom ---
