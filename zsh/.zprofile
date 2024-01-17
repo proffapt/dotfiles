@@ -21,7 +21,6 @@ export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Ho
 # For compilers to find ruby@2.7.5:
   export LDFLAGS="-L/Users/proffapt/.rbenv/versions/2.7.5/lib"
   export CPPFLAGS="-I/Users/proffapt/.rbenv/versions/2.7.5/include"
-
 # For pkg-config to find postgresql@16:
   export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@16/lib/pkgconfig"
 #### ----
