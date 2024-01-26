@@ -43,6 +43,7 @@ PATH=/opt/homebrew/sbin:$PATH # homebrew
 PATH=~/Desktop/scripts:$PATH # my scripts
 PATH=~/Desktop/iitkgp/erp/_scripts:$PATH # erp scripts
 PATH=~/Desktop/iitkgp/koss/KWoC/scripts:$PATH # kwoc scripts
+PATH="/opt/homebrew/opt/curl/bin:$PATH" # curl
 ### ---
 
 #### Configuring tools
