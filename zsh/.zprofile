@@ -11,7 +11,7 @@ export LANG=en_US.UTF-8
 export MFTPD=/home/pi/mftp
 export DENO_INSTALL="/Users/proffapt/.deno"
 export GRB_LICENSE_FILE="/Users/proffapt/certs+licenses/gurobi.lic"
-export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home"
 # For compilers to find postgresql@16:
   export LDFLAGS="-L/opt/homebrew/opt/postgresql@16/lib"
   export CPPFLAGS="-I/opt/homebrew/opt/postgresql@16/include"
