@@ -1,4 +1,0 @@
-#!/opt/homebrew/bin/bash
-
-qrencode -t PNG -s 20 -o /tmp/qrclip-img.png "$(pbpaste)"
-open /tmp/qrclip-img.png
