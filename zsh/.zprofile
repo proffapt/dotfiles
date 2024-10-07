@@ -37,6 +37,10 @@ PATH="/opt/homebrew/opt/ruby/bin:$PATH" # ruby@latest
 PATH="/Users/proffapt/.rbenv/versions/2.7.5/bin/:$PATH" # ruby@2.7.5
 ### ---
 #
+### --- Application ---
+PATH="/Applications/Docker.app/Contents/Resources/bin/:$PATH" # docker
+### ---
+#
 ### --- Custom ---
 PATH=/opt/homebrew/bin:$PATH # homebrew
 PATH=/opt/homebrew/sbin:$PATH # homebrew
