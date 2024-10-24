@@ -26,6 +26,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home"
 #### ----
 
 #### Configuring PATH variable
+PATH=/Users/proffapt/.local/bin:$PATH # Local
 #
 ### --- Languages ---
 PATH=/Users/proffapt/Library/Python/3.9/bin:$PATH # python
