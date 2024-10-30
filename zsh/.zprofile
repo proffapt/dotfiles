@@ -29,10 +29,8 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home"
 PATH=/Users/proffapt/.local/bin:$PATH # Local
 #
 ### --- Languages ---
-PATH=/Users/proffapt/Library/Python/3.9/bin:$PATH # python
 PATH=/Users/proffapt/go/bin:$PATH # golang
 PATH=$HOME/.cargo/bin:$PATH # rust
-PATH="$DENO_INSTALL/bin:$PATH" # deno
 PATH=/opt/homebrew/opt/postgresql@16/bin:$PATH # postgresql
 PATH="/opt/homebrew/opt/ruby/bin:$PATH" # ruby@latest
 PATH="/Users/proffapt/.rbenv/versions/2.7.5/bin/:$PATH" # ruby@2.7.5
