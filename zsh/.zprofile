@@ -55,5 +55,9 @@ PATH="/opt/homebrew/opt/curl/bin:$PATH" # curl
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-## thefuck
-eval $(thefuck --alias)
+## pyenv
+### Python version manager
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
