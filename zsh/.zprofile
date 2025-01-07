@@ -41,6 +41,9 @@ PATH="/Applications/Docker.app/Contents/Resources/bin/:$PATH" # docker
 ### ---
 #
 ### --- Custom ---
+#### --- AWSMO ---
+PATH=/Users/proffapt/Desktop/intern/awsmo/dev_env_config/:$PATH # manage-systems
+#### ---
 PATH=/opt/homebrew/bin:$PATH # homebrew
 PATH=/opt/homebrew/sbin:$PATH # homebrew
 PATH=~/Desktop/scripts:$PATH # my scripts
