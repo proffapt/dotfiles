@@ -23,10 +23,6 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home"
   export CPPFLAGS="-I/Users/proffapt/.rbenv/versions/2.7.5/include"
 # For pkg-config to find postgresql@16:
   export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@16/lib/pkgconfig"
-# For Hikari :: Pyano
-  export VOYAGE_API_KEY="pa-QAOkJav-5MOTbiB4ac_qC_6SMH24kpMtEdVPsmI-xuQ"
-  export TOGETHER_API_KEY="cc18744e8dec3d762fc41728742dacdebb3037771288e202ebd12e438185370f"
-  export FIRECRAWL_API_KEY="fc-bc6216a17075439c9906210f9e91945c"
 #### ----
 
 #### Configuring PATH variable
