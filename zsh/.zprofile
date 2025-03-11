@@ -4,12 +4,10 @@ source ~/.zshconf/functions
 
 #### Exporting environment variables
 #
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR=lvim
+export VISUAL=lvim
 export PAGER=bat
 export LANG=en_US.UTF-8
-export MFTPD=/home/pi/mftp
-export DENO_INSTALL="/Users/proffapt/.deno"
 export GRB_LICENSE_FILE="/Users/proffapt/certs+licenses/gurobi.lic"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home"
 # For compilers to find postgresql@16:
@@ -41,14 +39,17 @@ PATH="/Applications/Docker.app/Contents/Resources/bin/:$PATH" # docker
 ### ---
 #
 ### --- Custom ---
+PATH=~/Desktop/scripts:$PATH # my scripts
+#### --- KGP ---
+PATH=~/Desktop/iitkgp/erp/_scripts:$PATH # erp scripts
+PATH=~/Desktop/iitkgp/koss/KWoC/scripts:$PATH # kwoc scripts
+#### ---
 #### --- AWSMO ---
 PATH=/Users/proffapt/Desktop/intern/awsmo/dev_env_config/:$PATH # manage-systems
+PATH=/Users/proffapt/Desktop/intern/awsmo/_scripts/:$PATH # scripts (automation)
 #### ---
 PATH=/opt/homebrew/bin:$PATH # homebrew
 PATH=/opt/homebrew/sbin:$PATH # homebrew
-PATH=~/Desktop/scripts:$PATH # my scripts
-PATH=~/Desktop/iitkgp/erp/_scripts:$PATH # erp scripts
-PATH=~/Desktop/iitkgp/koss/KWoC/scripts:$PATH # kwoc scripts
 PATH="/opt/homebrew/opt/curl/bin:$PATH" # curl
 ### ---
 
