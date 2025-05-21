@@ -36,7 +36,7 @@ PATH="/Users/proffapt/.rbenv/versions/2.7.5/bin/:$PATH" # ruby@2.7.5
 #
 ### --- Application ---
 PATH="/Applications/Docker.app/Contents/Resources/bin/:$PATH" # docker
-export PATH="/usr/local/opt/openssl@3/bin:$PATH" #openssl
+PATH="/usr/local/opt/openssl@3/bin:$PATH" #openssl
 ### ---
 #
 ### --- Custom ---
