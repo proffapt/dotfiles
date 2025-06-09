@@ -1,24 +1,26 @@
 // ~/.finicky.js
 
-module.exports = {
+export default {
   defaultBrowser: "Arc",
   rewrite: [
     {
-      // Redirect all non-localhost URLs to use https
-      match: ({ url }) => url.protocol === "http" && !/^(localhost|127\.0\.0\.1)/.test(url.host),
-      url: { protocol: "https" }
+      match: ({ url }) => url.protocol === "http:" && !/^(localhost|127\.0\.0\.1)/.test(url.host),
+      url: ({ url }) => {
+        const newUrl = new URL(url.href);
+        newUrl.protocol = "https:";
+        return newUrl;
+      }
     }
-  ],      
+  ],
   handlers: [
-	{
-	  // Redirecting to Telegram app
-	  match: ["*t.me*"],
-	  browser: "/Applications/Telegram.app"
-	},
-	{
-	  // Redirecting to Discord app
-	  match: ["*discord.gg*"],
-	  browser: "/Applications/Discord.app"
-	} 
+    {
+      match: ["*t.me*"],
+      browser: "/Applications/Telegram.app"
+    },
+    {
+      match: ["*discord.gg*"],
+      browser: "/Applications/Discord.app"
+    }
   ]
 };
+
