@@ -9,7 +9,6 @@ directories=(
   "/Users/proffapt/Desktop/obsidian"
   "/Users/proffapt/Desktop/dotfiles/public"
   "/Users/proffapt/.config/nvim"
-  "/Users/proffapt/.config/lvim"
   "/Users/proffapt/Desktop/dotfiles/private"
   "/Users/proffapt/Desktop/dotfiles/vscode-conf"
 )
