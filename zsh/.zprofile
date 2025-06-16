@@ -4,8 +4,8 @@ source ~/.zshconf/functions
 
 #### Exporting environment variables
 #
-export EDITOR=lvim
-export VISUAL=lvim
+export EDITOR=nvim
+export VISUAL=nvim
 export PAGER=bat
 export LANG=en_US.UTF-8
 export GRB_LICENSE_FILE="/Users/proffapt/certs+licenses/gurobi.lic"
@@ -66,5 +66,5 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 ##
-export MANPAGER="lvim +Man!"
+export MANPAGER="nvim +Man!"
 
