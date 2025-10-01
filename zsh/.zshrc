@@ -73,3 +73,10 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git sudo web-search)
 
 source $ZSH/oh-my-zsh.sh
+
+# bun completions
+[ -s "/Users/proffapt/.bun/_bun" ] && source "/Users/proffapt/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
